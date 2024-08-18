@@ -18,7 +18,7 @@ function Home() {
           <h1 className="text-3xl font-semibold">
             Learn Touch Typing for Free! 💻
           </h1>
-          <p className="-ml-56 mt-4 mb-2 text-slate-500 text-sm">
+          <p className="msm:mx-auto xsm:ml-0 mt-4 mb-2 text-slate-500 text-sm">
             What is HD Typing Zone?
           </p>
           <p className="mb-4 text-2xl">

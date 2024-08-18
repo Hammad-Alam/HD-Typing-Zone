@@ -115,7 +115,7 @@ function TypingWorld({ mode }) {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-cover bg-center bg-[url('/src/assets/game-bg.jpg')]">
-      <div className="border-8 border-cyan-300 rounded-2xl mx-5 p-4 md:mx-24 lg:mx-32 xxl:mx-40">
+      <div className="border-8 border-cyan-300 rounded-2xl mx-4 p-4 md:mx-24 lg:mx-32 xxl:mx-40">
         {targetWord.split("").map((char, index) => {
           let backgroundColor = "bg-slate-100"; // Default background
 
@@ -143,7 +143,7 @@ function TypingWorld({ mode }) {
         disabled={input.length >= targetWord.length}
       />
       <div className="flex items-center justify-center rounded-2xl border-4 border-cyan-300 mx-4 text-[10px] p-4 mt-60">
-        <div className="flex items-center justify-center space-x-6 text-white lg:text-lg">
+        <div className="flex items-center justify-center space-x-6 text-white text-[6px] xsm:text-[10px] lg:text-lg">
           <p>WPM: {Math.round(wpm)}</p>
           <p>CPM: {Math.round(cpm)}</p>
           <p>Mistakes: {mistakes}</p>
@@ -151,7 +151,7 @@ function TypingWorld({ mode }) {
           <p>Time: {timer} seconds</p>
         </div>
       </div>
-      <div className="flex space-x-28 md:space-x-32 lg:space-x-60">
+      <div className="flex msm:space-x-8 xsm:space-x-32 lg:space-x-60">
         <button
           onClick={back}
           className="reset-button px-4 py-2 bg-white text-black rounded-lg cursor-pointer mt-4 md:px-2 xsm:px-1 "
